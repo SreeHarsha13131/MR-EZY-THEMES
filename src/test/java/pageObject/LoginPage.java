@@ -38,7 +38,13 @@ public class LoginPage {
     }
     public  void verifyHomePageTitle() throws InterruptedException {
         String HomePageTitle=driver.findElement(homePageTitle).getText();
-        System.out.println("HomePageTitle Captured from UI is - "+HomePageTitle);
+
+        if(HomePageTitle.equals("MR Transcripts Automation")){
+            System.out.println("HomePageTitle Captured from UI is - "+HomePageTitle);
+            System.out.println("User is successfully logged in to EZYThemes Application");
+        }else{
+            System.out.println("User is not logged in to EZYThemes Application");
+        }
         Thread.sleep(2000);
 
     }
