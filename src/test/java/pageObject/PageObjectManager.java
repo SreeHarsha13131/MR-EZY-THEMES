@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 public class PageObjectManager {
     public WebDriver driver;
     public LoginPage loginPage;
-    public CloudPage cloudPage;
+    public ConfigureDownloadPage configureDownloadPage;
 
     public PageObjectManager(WebDriver driver) {
 
@@ -15,8 +15,8 @@ public class PageObjectManager {
         loginPage = new LoginPage(driver);
         return loginPage;
     }
-    public CloudPage getCloudPage(){
-        cloudPage = new CloudPage(driver);
-        return cloudPage;
+    public ConfigureDownloadPage getConfigureDownloadPage(){
+        configureDownloadPage = new ConfigureDownloadPage(driver);
+        return configureDownloadPage;
     }
 }

@@ -5,10 +5,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class CloudPage {
+public class ConfigureDownloadPage {
     private WebDriver driver;
 
-    public CloudPage(WebDriver driver) {
+    public ConfigureDownloadPage(WebDriver driver) {
         this.driver = driver;
     }
 
