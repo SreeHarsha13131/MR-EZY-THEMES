@@ -48,5 +48,4 @@ public class LoginPage {
         Thread.sleep(2000);
 
     }
-
 }
