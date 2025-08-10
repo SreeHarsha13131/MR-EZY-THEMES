@@ -14,6 +14,7 @@ public class PageObjectManager {
     public LoginPage getLoginPage() {
         loginPage = new LoginPage(driver);
         return loginPage;
+    
     }
     public ConfigureDownloadPage getConfigureDownloadPage(){
         configureDownloadPage = new ConfigureDownloadPage(driver);
