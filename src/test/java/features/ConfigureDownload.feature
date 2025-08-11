@@ -8,7 +8,7 @@ Feature: Validate Cloud Page
 
     Examples:
       | UserName                    | Password     | | ProjectName |
-      | vijay.benal@graphenesvc.com | Graphene@123 | | QC_Flowtest_06-Mar-25_v1|
+      | vijay.benal@graphenesvc.com | Graphene@12 | | QC_Flowtest_06-Mar-25_v1|
 
 
 
