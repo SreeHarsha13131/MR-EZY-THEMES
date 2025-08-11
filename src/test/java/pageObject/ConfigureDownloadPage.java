@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import utils.UtilityMethod;
 
 public class ConfigureDownloadPage {
     private WebDriver driver;
@@ -27,17 +28,24 @@ public class ConfigureDownloadPage {
             System.out.println("ProjectName Captured from UI is - " + projectName);
             Thread.sleep(1000);
             driver.findElement(reviewLinkOnProject).click();
-        }else{
+        } else {
             System.out.println("ProjectName not Captured from UI");
         }
-        String ReviewPageProjectName=driver.findElement(reviewPageProjectName).getText();
+        String ReviewPageProjectName = driver.findElement(reviewPageProjectName).getText();
         Thread.sleep(1000);
 
-        if(ReviewPageProjectName.equals(projectName)){
-            System.out.println("User is successfully navigated to Review Page for Project - "+ReviewPageProjectName);
-        }else{
-            System.out.println("User is not navigated to Review Page Project - "+ReviewPageProjectName);
+
+        if (ReviewPageProjectName.equals(projectName)) {
+            System.out.println("User is successfully navigated to Review Page for Project - " + ReviewPageProjectName);
+        } else {
+            System.out.println("User is not navigated to Review Page Project - " + ReviewPageProjectName);
             Thread.sleep(5000);
         }
+    }
+
+    public void  getCurrentDate() {
+        String dateFormat = "dd-MMM-yyyy";
+        String todaysDate = UtilityMethod.getCurrentDate(dateFormat);
+        System.out.println("Current Date is - " + todaysDate);
     }
 }

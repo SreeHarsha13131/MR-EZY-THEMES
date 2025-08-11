@@ -18,6 +18,7 @@ public class TestBase {
         Properties properties = new Properties();
         properties.load(fileInputStream);
         String url = properties.getProperty("Testurl");
+        System.out.println(url);
         // TODO: Initialize and return a WebDriver instance
         if (driver == null) {
             if (properties.getProperty("browser").equalsIgnoreCase("chrome")) {
