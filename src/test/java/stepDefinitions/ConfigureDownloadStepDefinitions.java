@@ -13,11 +13,13 @@ public class ConfigureDownloadStepDefinitions {
     public ConfigureDownloadStepDefinitions(TestContextSetUp testContextSetUp) {
         this.testContextSetUp = testContextSetUp;
         this.configureDownloadPage=testContextSetUp.pageObjectManager.getConfigureDownloadPage();
+
     }
 
     @Then("^User should be able enter the (.+) and should able to search the project and Click on Review Link$")
     public void enterProjectName(String ProjectName) throws InterruptedException {
         configureDownloadPage.getSearchProjectAndClickOnReview(ProjectName);
+        System.out.println("User is successfully navigated to Review Page for Project - "+ProjectName);
     }
 
 }

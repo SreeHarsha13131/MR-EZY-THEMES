@@ -36,7 +36,7 @@ public class ConfigureDownloadPage {
         if(ReviewPageProjectName.equals(projectName)){
             System.out.println("User is successfully navigated to Review Page for Project - "+ReviewPageProjectName);
         }else{
-            System.out.println("User is not navigated to Review Page for Project - "+ReviewPageProjectName);
+            System.out.println("User is not navigated to Review Page Project - "+ReviewPageProjectName);
             Thread.sleep(5000);
         }
     }
